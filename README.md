@@ -19,4 +19,12 @@ This is a Flask web application that allows users to submit prices, which are th
 1. Clone this repository:
    ```
    git clone https://github.com/yourusername/your-repo-name.git
-  ```
+   ```
+2. To run the app
+```
+python app.py
+```
+3. To connect to the site
+```
+http://127.0.0.1:5000
+```
