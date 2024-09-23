@@ -12,7 +12,7 @@ except ImportError:
     print("Dependencies are missing, installing...")
     install_requirements()
 
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -48,4 +48,4 @@ def success():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',port=5000)
+    app.run()
