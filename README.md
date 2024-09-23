@@ -26,5 +26,5 @@ python app.py
 ```
 3. To connect to the site
 ```
-http://127.0.0.1:5000
+http://172.168.10.119:5000
 ```
