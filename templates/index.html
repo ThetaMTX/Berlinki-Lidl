@@ -8,9 +8,23 @@
 <body>
     <h1>Submit Price</h1>
     <form action="/submit" method="post">
-        <label for="price"></label>
-        <input type="text" id="price" name="price" required>
-        <button type="submit">Submit</button>
-    </form>
+    <label for="price">Price:</label>
+    <input type="text" id="price" name="price" required placeholder="Enter a valid price (e.g., 3 or 3.05)">
+    <button type="submit">Submit</button>
+</form>
+
+ <script>
+        document.getElementById('price').addEventListener('input', function (e) {
+            var priceInput = e.target.value;
+            var regex = /^\d+(\.\d{1,2})?$/;
+
+            if (!regex.test(priceInput)) {
+                e.target.setCustomValidity('Please enter a valid price. Use a dot (.) for decimal points, e.g., 3 or 3.05.');
+            } else {
+                e.target.setCustomValidity('');
+            }
+        });
+    </script>
+
 </body>
 </html>

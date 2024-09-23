@@ -67,3 +67,14 @@ button:hover {
 .success-message a:hover {
     text-decoration: underline; /* Underline on hover */
 }
+.flash-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
