@@ -12,7 +12,7 @@ except ImportError:
     print("Dependencies are missing, installing...")
     install_requirements()
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
