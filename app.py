@@ -1,18 +1,9 @@
 import subprocess
 import sys
+from urllib import request
 
-def install_requirements():
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
-
-try:
-    import flask
-    import requests
-    import numpy
-except ImportError:
-    print("Dependencies are missing, installing...")
-    install_requirements()
-
-from flask import Flask, render_template, redirect
+import requests
+from flask import Flask, request, render_template, jsonify, redirect
 
 app = Flask(__name__)
 
